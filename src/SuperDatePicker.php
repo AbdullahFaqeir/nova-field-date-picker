@@ -1,11 +1,11 @@
 <?php
 
-namespace IziDev\VCalendar;
+namespace AbdullahFaqeir\VCalendar;
 
 use Laravel\Nova\Fields\Date;
-use IziDev\VCalendar\Attributes\AttributeVCalendar;
-use IziDev\VCalendar\Interval\IntervalDatesVCalendar;
-use IziDev\VCalendar\Disabled\DisabledDatesVCalendar;
+use AbdullahFaqeir\VCalendar\Attributes\AttributeVCalendar;
+use AbdullahFaqeir\VCalendar\Interval\IntervalDatesVCalendar;
+use AbdullahFaqeir\VCalendar\Disabled\DisabledDatesVCalendar;
 
 class SuperDatePicker extends Date
 {

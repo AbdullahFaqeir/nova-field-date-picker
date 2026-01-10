@@ -1,6 +1,6 @@
 <?php
 
-namespace IziDev\VCalendar\Popover;
+namespace AbdullahFaqeir\VCalendar\Popover;
 
 class ClickPopoverVCalendar extends TypePopoverVCalendar
 {

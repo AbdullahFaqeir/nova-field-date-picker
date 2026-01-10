@@ -1,6 +1,21 @@
 let mix = require('laravel-mix')
 
+require('./nova.mix')
+
 mix
-  .setPublicPath('dist')
-  .js('resources/js/field.js', 'js')
-  .sass('resources/sass/field.scss', 'css')
+    .setPublicPath('dist')
+    .webpackConfig({
+        resolve: {
+            extensions: ['.ts', '.tsx', '.js']
+        },
+        module: {
+            rules: [{
+                test: /\.tsx?$/,
+                loader: 'ts-loader'
+            }]
+        }
+    })
+    .js('resources/js/field.js', 'js')
+    .vue({version: 3})
+    .css('resources/css/field.css', 'css')
+    .nova('devloops/time-picker')

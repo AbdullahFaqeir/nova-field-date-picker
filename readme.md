@@ -12,13 +12,13 @@ An elegant calendar and datepicker Field for laravel nova based on https://vcale
 ## Installation
 This package can be installed through Composer.
 ```bash
-composer require izi-dev/nova-field-date-picker
+composer require abdullahfaqeir/nova-field-date-picker
 ```
 
 ## Example Usage
 ```php
 
-use IziDev\VCalendar\SuperDatePicker;
+use AbdullahFaqeir\VCalendar\SuperDatePicker;
 
 SuperDatePicker::make(__("Birthdate"), 'birthdate')
     ->required(true)
@@ -92,7 +92,7 @@ BarAttributeVCalendar
 ### Dot
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
-use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
+use AbdullahFaqeir\VCalendar\Attributes\DotAttributeVCalendar;
 
 ->selectAttribute(
     (new DotAttributeVCalendar("orange"))
@@ -103,7 +103,7 @@ use IziDev\VCalendar\Attributes\DotAttributeVCalendar;
 ### Highlight
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
-use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
+use AbdullahFaqeir\VCalendar\Attributes\HighlightAttributeVCalendar;
 
 ->selectAttribute(
     (new HighlightAttributeVCalendar("orange"))
@@ -114,7 +114,7 @@ use IziDev\VCalendar\Attributes\HighlightAttributeVCalendar;
 ### Bar
 Arguments: null, true, gray, red, orange, yellow, green, teal, blue, indigo, purple, pink
 ```
-use IziDev\VCalendar\Attributes\BarAttributeVCalendar;
+use AbdullahFaqeir\VCalendar\Attributes\BarAttributeVCalendar;
 
 ->selectAttribute(
     (new BarAttributeVCalendar("orange"))
@@ -129,7 +129,7 @@ FocusPopoverVCalendar,
 HoverPopoverVCalendar
 
 ```
-use IziDev\VCalendar\Popover\HoverPopoverVCalendar;
+use AbdullahFaqeir\VCalendar\Popover\HoverPopoverVCalendar;
 
 ->selectAttribute(
     (new BarAttributeVCalendar("orange"))
@@ -163,11 +163,11 @@ BarAttributeVCalendar
 
 |  Object |  Description | Range | 
 | ------------ | ------------ | ------------ | 
-|  IziDev\VCalendar\Disabled\DaysDisabledDatesVCalendar | Day number from the start or end of the month.	  |1 to 31, -1 to -31 |
-|  IziDev\VCalendar\Disabled\WeekdaysDisabledDatesVCalendar | Day of the week.	  |1: Sun to 7: Sat |
-|  IziDev\VCalendar\Disabled\WeeksDisabledDatesVCalendar | Week number from the start or end of the month.	  |1 to 6, -1 to -6 |
-|  IziDev\VCalendar\Disabled\MonthsDisabledDatesVCalendar | Months of the year.	  |1 to 12 |
-|  IziDev\VCalendar\Disabled\YearsDisabledDatesVCalendar | Year numbers.	  |4-digit integer |
+|  AbdullahFaqeir\VCalendar\Disabled\DaysDisabledDatesVCalendar | Day number from the start or end of the month.	  |1 to 31, -1 to -31 |
+|  AbdullahFaqeir\VCalendar\Disabled\WeekdaysDisabledDatesVCalendar | Day of the week.	  |1: Sun to 7: Sat |
+|  AbdullahFaqeir\VCalendar\Disabled\WeeksDisabledDatesVCalendar | Week number from the start or end of the month.	  |1 to 6, -1 to -6 |
+|  AbdullahFaqeir\VCalendar\Disabled\MonthsDisabledDatesVCalendar | Months of the year.	  |1 to 12 |
+|  AbdullahFaqeir\VCalendar\Disabled\YearsDisabledDatesVCalendar | Year numbers.	  |4-digit integer |
 
 ```
 ->disabled(new DaysDisabledDatesVCalendar(9, 16))
@@ -177,10 +177,10 @@ BarAttributeVCalendar
 
 |  Object |  Description 
 | ------------ | ------------ 
-|  IziDev\VCalendar\Interval\DayliIntervalDatesVCalendar | Interval number of days from the start date (or today when no start date provided).	  
-|  IziDev\VCalendar\Interval\WeeklyIntervalDatesVCalendar | Interval number of weeks from the start date (or today).	  
-|  IziDev\VCalendar\Interval\MonthlyIntervalDatesVCalendar | Interval number of months from the start date (or today).
-|  IziDev\VCalendar\Interval\YearlyIntervalDatesVCalendar | Interval number of years from the start date (or today).
+|  AbdullahFaqeir\VCalendar\Interval\DayliIntervalDatesVCalendar | Interval number of days from the start date (or today when no start date provided).	  
+|  AbdullahFaqeir\VCalendar\Interval\WeeklyIntervalDatesVCalendar | Interval number of weeks from the start date (or today).	  
+|  AbdullahFaqeir\VCalendar\Interval\MonthlyIntervalDatesVCalendar | Interval number of months from the start date (or today).
+|  AbdullahFaqeir\VCalendar\Interval\YearlyIntervalDatesVCalendar | Interval number of years from the start date (or today).
 
 ```
 ->disabled(new WeekdaysDisabledDatesVCalendar(1, 7),new WeeklyIntervalDatesVCalendar(2))

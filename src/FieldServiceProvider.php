@@ -1,6 +1,6 @@
 <?php
 
-namespace IziDev\VCalendar;
+namespace AbdullahFaqeir\VCalendar;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

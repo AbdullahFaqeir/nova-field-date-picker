@@ -1,5 +1,12 @@
-Nova.booting((Vue, router, store) => {
-  Vue.component('index-v-calendar', require('./components/IndexField'))
-  Vue.component('detail-v-calendar', require('./components/DetailField'))
-  Vue.component('form-v-calendar', require('./components/FormField'))
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
+import IndexField from './components/IndexField'
+import DetailField from './components/DetailField'
+import FormField from './components/FormField'
+
+Nova.booting((app, store) => {
+    app.use(VCalendar);
+    app.component('index-v-calendar', IndexField)
+    app.component('detail-v-calendar', DetailField)
+    app.component('form-v-calendar', FormField)
 })

@@ -1,8 +1,8 @@
 <?php
 
-namespace IziDev\VCalendar\Disabled;
+namespace AbdullahFaqeir\VCalendar\Disabled;
 
-use IziDev\VCalendar\Interval\IntervalDatesVCalendar;
+use AbdullahFaqeir\VCalendar\Interval\IntervalDatesVCalendar;
 
 interface DisabledDatesVCalendar
 {
