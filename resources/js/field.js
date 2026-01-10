@@ -1,5 +1,4 @@
 import VCalendar from 'v-calendar';
-import 'v-calendar/style.css';
 import IndexField from './components/IndexField'
 import DetailField from './components/DetailField'
 import FormField from './components/FormField'

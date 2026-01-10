@@ -6,7 +6,10 @@ mix
     .setPublicPath('dist')
     .webpackConfig({
         resolve: {
-            extensions: ['.ts', '.tsx', '.js']
+            extensions: ['.ts', '.tsx', '.js', '.vue'],
+            fallback: {
+                process: require.resolve('process/browser'),
+            },
         },
         module: {
             rules: [{
