@@ -1,6 +1,8 @@
-# Laravel Nova Field Super DatePicker
-[![GitHub license](https://img.shields.io/github/license/MohmmedAshraf/nova-fields-agent.svg)](https://github.com/MohmmedAshraf/nova-fields-agent/blob/master/LICENSE.md)
+## Legal Disclaimer
+This repo is an updated fork from [Laravel Nova Field Super DatePicker](https://github.com/izi-dev/nova-field-date-picker)
 
+# Laravel Nova Field Super DatePicker
+[![GitHub license](https://img.shields.io/github/license/abdullahfaqeir/nova-field-date-picker.svg)](https://github.com/abdullahfaqeir/nova-field-date-picker/blob/master/LICENSE.md)
 
 ## Description
 An elegant calendar and datepicker Field for laravel nova based on https://vcalendar.io/.
