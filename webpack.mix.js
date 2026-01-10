@@ -21,4 +21,4 @@ mix
     .js('resources/js/field.js', 'js')
     .vue({version: 3})
     .css('resources/css/field.css', 'css')
-    .nova('devloops/time-picker')
+    .nova('AbdullahFaqeir/nova-field-date-picker')

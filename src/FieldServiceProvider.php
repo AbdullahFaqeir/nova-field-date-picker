@@ -2,9 +2,9 @@
 
 namespace AbdullahFaqeir\VCalendar;
 
-use Illuminate\Support\ServiceProvider;
-use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
+use Laravel\Nova\Events\ServingNova;
+use Illuminate\Support\ServiceProvider;
 
 class FieldServiceProvider extends ServiceProvider
 {
@@ -13,11 +13,11 @@ class FieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        Nova::serving(function (ServingNova $event) {
-            Nova::script('v-calendar', __DIR__.'/../dist/js/field.js');
-            Nova::style('v-calendar', __DIR__.'/../dist/css/field.css');
+        Nova::serving(static function (ServingNova $event) {
+            Nova::script('super-date-picker', __DIR__.'/../dist/js/field.js');
+            Nova::style('super-date-picker', __DIR__.'/../dist/css/field.css');
         });
     }
 
@@ -26,7 +26,7 @@ class FieldServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
