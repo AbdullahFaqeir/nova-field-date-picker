@@ -109,6 +109,10 @@ export default {
 
             let date = this.value;
 
+            if (date) {
+                date = moment(this.value).format(this.format);
+            }
+
             formData.append(this.field.attribute, date || '');
         },
 
